@@ -145,4 +145,4 @@ function menu(){
     }while(!salirMenu)
 }
 
-menu()
+//menu()
