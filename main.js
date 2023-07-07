@@ -46,19 +46,21 @@ let productosDiv = document.getElementById("producto")
 productosDiv.appendChild(nuevoProductoDiv) */
 
 //recorrer estanteria para imprimir TODOS los elemientos de mi array
-
-for(let item of estanteria){
-    let nuevoProductoDiv = document.createElement("div")
-    nuevoProductoDiv.className = "col-12 col-md-6 col-lg-4 my-2"
-    nuevoProductoDiv.innerHTML = `<div id="${item.id}" class="card" style="width: 18rem;">
-                                <img src="img/${item.img}" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h4 class="card-title">${item.marca}</h5>
-                                    <p class="card-text">tipo: ${item.producto}</p>
-                                    <p class="">Precio: ${item.precio}</p>
-                                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+function mostrarCatalogo(array){
+    for(let item of array){
+        let nuevoProductoDiv = document.createElement("div")
+        nuevoProductoDiv.className = "col-12 col-md-6 col-lg-4 my-2"
+        nuevoProductoDiv.innerHTML = `<div id="${item.id}" class="card" style="width: 18rem;">
+                                    <img src="img/${item.img}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h4 class="card-title">${item.marca}</h5>
+                                        <p class="card-text">tipo: ${item.producto}</p>
+                                        <p class="">Precio: ${item.precio}</p>
+                                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                                    </div>
                                 </div>
-                            </div>
-`
-productosDiv.appendChild(nuevoProductoDiv)
+    `
+    productosDiv.appendChild(nuevoProductoDiv)
+    }
 }
+mostrarCatalogo(estanteria)
