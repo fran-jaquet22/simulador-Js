@@ -146,3 +146,17 @@ function menu(){
 }
 
 //menu()
+
+/* let nuevoProductoDiv = document.createElement("div")
+
+    nuevoProductoDiv.innerHTML = `<div id="${item2.id}" class="card" style="width: 18rem;">
+                                <img src="img/mareno.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">${item2.marca}</h5>
+                                    <p class="card-text">tipo: ${item2.producto}</p>
+                                    <p class="">Precio: ${item2.precio}</p>
+                                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                                </div>
+                            </div>
+    `
+productosDiv.appendChild(nuevoProductoDiv) */
