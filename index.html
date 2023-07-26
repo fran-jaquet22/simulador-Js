@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Proyecto Final</title>
 </head>
 <body>
     <header class="body">
@@ -14,59 +14,32 @@
             <div class="container-fluid">
               <a class="navbar-brand">Distribuidora Alpha</a>
               <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <input id="buscaProducto" class="form-control me-2" type="search" placeholder="Que buscas?" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
               </form>
+              <!-- dark mode-->
+              <div class = "row">
+                <div class="m-4 col-lg-1">
+                  <button id="modoOscuro" type="button" class="btn btn-dark">Dark</button>
+                </div>
+                
+                <div class="m-4 col-lg-1">
+                  <button id="modoClaro" type="button" class="btn btn-light">Light</button>
+                </div>
+              
+              </div>
+              <!-- carrito -->
+              <button id="carrito" type="button" class="btn btn-secondary"> Carrito
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+              </button>
             </div>
         </nav>
     </header>
     <main>
-      <form id="" class="col-lg-6 m-5">
-        <div class="mb-3">
-          <label for="marca" class="form-label">Marca:</label>
-          <input type="text" class="form-control" id="marcaInput" aria-describedby="titulo">
-          
-        </div>
-        <div class="mb-3">
-          <label for="produc" class="form-label">Tipo del producto:</label>
-          <input type="text" class="form-control" id="productoInput" aria-describedby="autor">
-          
-        </div>
-        <div class="mb-3">
-          <label for="precio" class="form-label">Precio:</label>
-          <input type="text" class="form-control" id="precioInput" aria-describedby="precio">
-          
-        </div>
-        <div>
-            <button type="text" id="guardarBoton" class="btn btn-success" >Guardar Producto</button>
-        </div>
-      </form>
-
-      <div class="row">
-        <div class="m-5 col-lg-3">
-            <button id="verCatalogo" class="btn btn-success">Ver Catálogo</button>
-        </div>
-        <div class="m-5 col-lg-3">
-            <button id="ocultarCatalogo" class="btn btn-success">Ocultar Catálogo</button>
-
-        </div>
-
-      </div>
-
-      <div class = "row">
-        <div class="m-5 col-lg-1">
-          <button id="modoOscuro" type="button" class="btn btn-dark">Dark</button>
-        </div>
-        
-        <div class="m-5 col-lg-1">
-          <button id="modoClaro" type="button" class="btn btn-light">Light</button>
-        </div>
-      
-      </div>
-
-      <div class="container">
-        <div id="producto" class="row">
-
+      <div id="container">
+        <div id="containerCard" class="row">
         </div>
       </div>
       

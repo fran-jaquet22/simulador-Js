@@ -23,7 +23,7 @@ const item5 = new catalogoA (5, "Motul", "Aceite", 2700 , "motul.jpg")
 const item6 = new catalogoA (6, "Malhe", "Filtro", 1250, "malhe.jpg")
 
 const item7 = new catalogoA (7, "ACdelco", "Filtro", 1200, "acdelco.jpg")
-
+ 
 let estanteria = []
 
 if(localStorage.getItem("estanteria")){
@@ -33,3 +33,9 @@ if(localStorage.getItem("estanteria")){
     localStorage.setItem("estanteria", JSON.stringify(estanteria))
 }
 
+fetch("stock.json")
+.then((res)=> res.json())
+.then((data)=>{
+    console.log(`info`)
+    console.log(data)
+})

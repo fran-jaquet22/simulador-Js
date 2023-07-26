@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "marca": "Castrol",
+        "producto": "aceite",
+        "precio": 4000,
+        "img": "castrol1540.jpg"
+    },
+    
+    {
+        "id": 2,
+        "marca": "Mareno",
+        "producto": "filtro",
+        "precio": 1200,
+        "img": "mareno.jpg"
+    },
+
+    {
+        "id": 3,
+        "marca": "Total",
+        "producto": "aceite",
+        "precio": 3500,
+        "img": "total1540.jpg"
+    },
+
+    {
+        "id": 4,
+        "marca": "Castrol",
+        "producto": "aceite",
+        "precio": 2000,
+        "img": "castrol1L.jpg"
+    },
+
+    {
+        "id": 5,
+        "marca": "Motul",
+        "producto": "aceite",
+        "precio": 2700,
+        "img": "motul.jpg"
+    },
+
+    {
+        "id": 6,
+        "marca": "Mahle",
+        "producto": "filtro",
+        "precio": 1250,
+        "img": "malhe.jpg"
+    },
+
+    {
+        "id": 7,
+        "marca": "ACdelco",
+        "producto": "filtro",
+        "precio": 1200,
+        "img": "acdelco.jpg"
+    }
+]
