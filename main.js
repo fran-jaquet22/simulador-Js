@@ -21,7 +21,7 @@ estanteria.forEach((item)=>{
     let btnCarrito = document.getElementById(`btnCarrito${item.id}`)
     
     btnCarrito.addEventListener("click", ()=>{
-        console.log(`se agrego ${item.producto}`)
+        /* console.log(`se agrego ${item.producto}`) */
         agregrarAlCarrito(item)
     })
     
@@ -40,9 +40,21 @@ function agregrarAlCarrito(item){
     if(itemEnCarrito == undefined){
         carrito.push(item)
         localStorage.setItem("carro", JSON.stringify(carrito))
-        console.log(carrito)
+        Swal.fire({
+            icon: 'success',
+            title: 'Exelente!',
+            text: 'Agregaste el producto al carrito!',
+            timer: 1500,
+            confirmButtonColor: "lightGreen"
+          })
     }else{
-        console.log(`El producto ${item.producto} ${item.marca} ya existe en el carro`)
+        Swal.fire({
+            icon: 'warning',
+            title: 'ATENCION!',
+            text: 'El producto ya se encuentra en el carrito!',
+            timer: 1300,
+            confirmButtonColor: "orange"
+          })
     }
 }
 
