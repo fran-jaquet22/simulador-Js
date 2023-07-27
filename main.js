@@ -28,7 +28,6 @@ function mostrarStock(){
         
     })
 }
-/* mostrarStock() */
 
 /* seteado del storage del carrito */
 if(localStorage.getItem("carro")){
@@ -62,7 +61,6 @@ function agregrarAlCarrito(item){
 }
 
 /* funcion del modal del carrito */
-
 let botonDelCarrito = document.getElementById("carritoBtn")
 let setCarrito = document.getElementById("modalCarrito")
 
