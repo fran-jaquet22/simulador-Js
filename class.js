@@ -33,9 +33,9 @@ if(localStorage.getItem("estanteria")){
     localStorage.setItem("estanteria", JSON.stringify(estanteria))
 }
 
-fetch("stock.json")
+/* fetch("stock.json")
 .then((res)=> res.json())
 .then((data)=>{
     console.log(`info`)
     console.log(data)
-})
+}) */
