@@ -133,11 +133,3 @@ setTimeout(()=>{
     cargarStock.remove()
     mostrarStock(estanteria)
 },1500)
-
-/* const imprimirStock = async ()=>{
-    const res = await fetch("stock.json")
-    const data = await res.json()
-    console.log(`info cap`)
-    console.log(data)
-}
-imprimirStock */
